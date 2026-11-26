@@ -36,7 +36,7 @@
     <!-- Hero：模板样式，标题与副标题按银宇宙星球真实情况写 -->
     <section class="mx-auto w-full max-w-6xl px-5 pb-2 pt-8 sm:pt-10">
       <h1 class="max-w-3xl text-3xl font-black leading-tight tracking-tight sm:text-5xl">
-        银宇宙星球账号商城，<span class="text-[#0e9f6e] dark:text-[#17b978]">下单即发</span>
+        各国社交账号与 AI 订阅号，<span class="text-[#0e9f6e] dark:text-[#17b978]">下单即发</span>
       </h1>
       <p class="mt-4 max-w-2xl text-base text-muted-foreground">
         {{ localizedSubtitle || "人工检测后上架 · 付款后自动发货卡密 · 大批量采购请先联系客服谈批发价" }}
