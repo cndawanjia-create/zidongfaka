@@ -204,6 +204,15 @@
       </div>
     </section>
 
+    <!-- 付款方式：放在售后说明和页脚之间，Logo 一排居中 -->
+    <section class="mx-auto w-full max-w-6xl px-5 pt-8">
+      <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 py-2">
+        <span class="flex items-center gap-2 text-[15px] font-bold"><span class="grid size-6 place-items-center rounded bg-[#1677ff] text-[13px] font-black text-white">支</span>Alipay</span>
+        <span class="flex items-center gap-2 text-[15px] font-bold"><span class="grid size-6 place-items-center rounded-full bg-[#07c160] text-[13px] font-black text-white">微</span>WeChat Pay</span>
+        <span class="flex items-center gap-2 text-[15px] font-bold"><span class="grid size-6 place-items-center rounded-full bg-[#26a17b] text-[13px] font-black text-white">₮</span>USDT</span>
+      </div>
+    </section>
+
     <div id="contact" class="scroll-mt-24">
       <StorefrontFooter />
     </div>
