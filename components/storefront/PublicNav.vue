@@ -1,5 +1,12 @@
 <template>
   <nav class="flex shrink-0 items-center gap-1" :aria-label="messages.nav.main">
+    <!-- 模板导航：只在首页的锚点区块有效，商品页点开会回到首页对应位置 -->
+    <span class="mr-1 hidden items-center gap-1 lg:flex">
+      <a href="/#shop" class="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground">全部商品</a>
+      <a href="/#steps" class="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground">购买流程</a>
+      <a href="/#faq" class="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground">常见问题</a>
+      <a href="https://t.me/Yinyuzhou" target="_blank" rel="noopener noreferrer" class="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground">联系客服</a>
+    </span>
     <template v-if="user">
       <Button size="sm" variant="ghost" as-child><a href="/account/order"><ClipboardListIcon data-icon="inline-start" />{{ messages.nav.myOrders }}</a></Button>
     </template>
