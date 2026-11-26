@@ -48,13 +48,6 @@
         </div>
         <Button type="submit" class="shrink-0 rounded-full bg-foreground px-6 text-background hover:bg-foreground/90">搜索</Button>
       </form>
-      <div class="mt-5 flex flex-wrap items-center gap-2 text-[13px]">
-        <span class="font-bold text-muted-foreground">付款方式</span>
-        <span class="rounded-full bg-[#e3f5ec] px-3 py-1 font-semibold text-[#0e9f6e] dark:bg-[#123528] dark:text-[#17b978]">付款后自动发货</span>
-        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">支付宝</span>
-        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">微信</span>
-        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">USDT</span>
-      </div>
       <div class="mt-7 flex flex-wrap gap-8">
         <div><b class="block text-2xl font-extrabold tabular-nums">{{ data.products.length }}</b><span class="text-[13px] text-muted-foreground">在售商品</span></div>
         <div><b class="block text-2xl font-extrabold tabular-nums">{{ data.categories.length }}</b><span class="text-[13px] text-muted-foreground">商品分类</span></div>
