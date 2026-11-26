@@ -1,10 +1,10 @@
 <template>
-  <main class="flex h-dvh flex-col overflow-hidden bg-muted/30">
+  <main class="yy-page flex h-dvh flex-col overflow-hidden">
     <header class="fixed inset-x-0 top-0 z-50 border-b bg-background/95 backdrop-blur"><div class="mx-auto flex min-h-16 max-w-6xl items-center justify-between px-5"><StorefrontBrand /><PublicNav /></div></header>
     <div class="mt-16 flex min-h-0 flex-1 flex-col overflow-y-auto">
-      <section class="mx-auto grid w-full max-w-6xl flex-1 gap-8 px-5 pb-10 pt-10 lg:grid-cols-[minmax(0,1fr)_22rem]">
+          <section class="mx-auto grid w-full max-w-6xl flex-1 gap-8 px-5 pb-10 pt-10 lg:grid-cols-[minmax(0,1fr)_22rem]">
         <article>
-          <div class="overflow-hidden rounded-xl border bg-muted"><img :src="data.coverImage || defaultProductImage" :alt="productName" class="max-h-96 w-full object-cover" /></div>
+          <div class="overflow-hidden rounded-[14px] border bg-muted"><img :src="data.coverImage || defaultProductImage" :alt="productName" class="max-h-96 w-full object-cover" /></div>
           <div class="mt-5">
             <Badge variant="secondary">{{ productCategoryName || messages.productCheckout.defaultCategory }}</Badge>
             <h1 class="mt-3 text-2xl font-semibold tracking-normal sm:text-3xl">{{ productName }}</h1>
@@ -24,7 +24,7 @@
         </article>
         <aside class="h-fit lg:sticky lg:top-0">
           <Card>
-            <CardHeader><CardDescription>{{ messages.productCheckout.currentPrice }}</CardDescription><CardTitle class="text-3xl text-orange-600">{{ selectedSku.price }}<CurrencyHint /></CardTitle></CardHeader><form class="grid min-w-0 gap-6" novalidate @submit.prevent="submit">
+            <CardHeader><CardDescription>{{ messages.productCheckout.currentPrice }}</CardDescription><CardTitle class="text-3xl text-[#0e9f6e] dark:text-[#17b978]">{{ selectedSku.price }}<CurrencyHint /></CardTitle></CardHeader><form class="grid min-w-0 gap-6" novalidate @submit.prevent="submit">
               <CardContent class="grid min-w-0 gap-4">
                 <div v-if="data.skus.length > 1" class="grid gap-2 text-sm font-medium">
                   <span>{{ messages.productCheckout.selectSku }}</span>
@@ -68,7 +68,7 @@
                 <div class="grid gap-2 text-sm font-medium"><span>{{ messages.productCheckout.discountCode }}</span><div class="flex gap-2"><Input v-model="discountCode" autocomplete="off" @keydown.enter.prevent="onApplyDiscount" /><Button type="button" variant="outline" :disabled="discountApplying || !discountCode.trim()" @click="onApplyDiscount">{{ discountApplying ? messages.productCheckout.applyingDiscount : messages.productCheckout.applyDiscount }}</Button></div></div>
                 <div v-if="discountPreview" class="grid gap-1 rounded-md border bg-muted/30 p-3 text-sm"><div class="flex justify-between gap-4"><span class="text-muted-foreground">{{ messages.productCheckout.originalAmount }}</span><span>{{ discountPreview.originalAmount }}</span></div><div class="flex justify-between gap-4"><span class="text-muted-foreground">{{ t(messages.productCheckout.appliedDiscount, { code: discountPreview.code }) }}</span><span class="text-destructive">-{{ discountPreview.discountAmount }}</span></div><div class="flex justify-between gap-4 border-t pt-2 font-medium"><span>{{ messages.productCheckout.amountDue }}</span><span>{{ discountPreview.finalAmount }}<CurrencyHint /></span></div></div>
                 <label class="grid gap-2 text-sm font-medium">{{ messages.productCheckout.buyerNote }}<Textarea v-model="buyerNote" rows="3" /></label>
-              </CardContent><CardFooter class="flex-col items-stretch gap-3"><Button type="submit" :disabled="loading || isOutOfStock || (requiresPayment && !methods.length)">{{ loading ? messages.productCheckout.processingOrder : isOutOfStock ? messages.storefront.outOfStock : requiresPayment ? messages.productCheckout.submitAndPay : messages.productCheckout.createFreeOrder }}</Button><p class="text-xs text-muted-foreground">{{ messages.productCheckout.paymentAmountNotice }}</p></CardFooter>
+              </CardContent><CardFooter class="flex-col items-stretch gap-3"><Button type="submit" class="yy-accent-btn" :disabled="loading || isOutOfStock || (requiresPayment && !methods.length)">{{ loading ? messages.productCheckout.processingOrder : isOutOfStock ? messages.storefront.outOfStock : requiresPayment ? messages.productCheckout.submitAndPay : messages.productCheckout.createFreeOrder }}</Button><p class="text-xs text-muted-foreground">{{ messages.productCheckout.paymentAmountNotice }}</p></CardFooter>
             </form>
           </Card>
         </aside>
