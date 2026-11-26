@@ -52,8 +52,8 @@
         <span class="font-bold text-muted-foreground">付款方式</span>
         <span class="rounded-full bg-[#e3f5ec] px-3 py-1 font-semibold text-[#0e9f6e] dark:bg-[#123528] dark:text-[#17b978]">付款后自动发货</span>
         <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">支付宝</span>
-        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">易支付</span>
-        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">USDT-Arbitrum</span>
+        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">微信</span>
+        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">USDT</span>
       </div>
       <div class="mt-7 flex flex-wrap gap-8">
         <div><b class="block text-2xl font-extrabold tabular-nums">{{ data.products.length }}</b><span class="text-[13px] text-muted-foreground">在售商品</span></div>
@@ -164,7 +164,7 @@
         <div class="rounded-[14px] border bg-card p-5">
           <span class="grid size-8 place-items-center rounded-full bg-foreground text-sm font-extrabold text-background">2</span>
           <b class="mt-3 block text-base">填写邮箱并付款</b>
-          <p class="mt-1.5 text-sm text-muted-foreground">收货邮箱务必填对；支持支付宝、易支付、USDT-Arbitrum。</p>
+          <p class="mt-1.5 text-sm text-muted-foreground">收货邮箱务必填对；支持支付宝、微信、USDT。</p>
         </div>
         <div class="rounded-[14px] border bg-card p-5">
           <span class="grid size-8 place-items-center rounded-full bg-foreground text-sm font-extrabold text-background">3</span>
@@ -189,7 +189,7 @@
         </details>
         <details class="rounded-xl border bg-card">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-3.5 font-bold">支持哪些付款方式？<span class="shrink-0 text-xl text-muted-foreground">+</span></summary>
-          <p class="px-5 pb-4 text-sm leading-6 text-muted-foreground">支持支付宝、易支付和 USDT（Arbitrum 网络）。下单页会显示当前可用的付款方式，以页面实际显示为准。</p>
+          <p class="px-5 pb-4 text-sm leading-6 text-muted-foreground">支持支付宝、微信和 USDT（Arbitrum 网络）。下单页会显示当前可用的付款方式，以页面实际显示为准。</p>
         </details>
         <details class="rounded-xl border bg-card">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-3.5 font-bold">买回去登录不上怎么办？<span class="shrink-0 text-xl text-muted-foreground">+</span></summary>
