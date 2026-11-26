@@ -36,7 +36,7 @@
     <!-- Hero：模板样式，标题与副标题按银宇宙星球真实情况写 -->
     <section class="mx-auto w-full max-w-6xl px-5 pb-2 pt-8 sm:pt-10">
       <h1 class="max-w-3xl text-3xl font-black leading-tight tracking-tight sm:text-5xl">
-        银宇宙星球账号商城，<span class="text-[#0e9f6e] dark:text-[#17b978]">下单即发</span>
+        各国社交账号与 AI 订阅号，<span class="text-[#0e9f6e] dark:text-[#17b978]">下单即发</span>
       </h1>
       <p class="mt-4 max-w-2xl text-base text-muted-foreground">
         {{ localizedSubtitle || "人工检测后上架 · 付款后自动发货卡密 · 大批量采购请先联系客服谈批发价" }}
@@ -48,13 +48,6 @@
         </div>
         <Button type="submit" class="shrink-0 rounded-full bg-foreground px-6 text-background hover:bg-foreground/90">搜索</Button>
       </form>
-      <div class="mt-5 flex flex-wrap items-center gap-2 text-[13px]">
-        <span class="font-bold text-muted-foreground">付款方式</span>
-        <span class="rounded-full bg-[#e3f5ec] px-3 py-1 font-semibold text-[#0e9f6e] dark:bg-[#123528] dark:text-[#17b978]">付款后自动发货</span>
-        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">支付宝</span>
-        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">微信</span>
-        <span class="rounded-full border bg-card px-3 py-1 font-medium text-muted-foreground">USDT</span>
-      </div>
       <div class="mt-7 flex flex-wrap gap-8">
         <div><b class="block text-2xl font-extrabold tabular-nums">{{ data.products.length }}</b><span class="text-[13px] text-muted-foreground">在售商品</span></div>
         <div><b class="block text-2xl font-extrabold tabular-nums">{{ data.categories.length }}</b><span class="text-[13px] text-muted-foreground">商品分类</span></div>
@@ -208,6 +201,15 @@
         <b class="block">售后与合规说明</b>
         <p class="mt-1.5 text-sm leading-6 text-muted-foreground">{{ localizedNotice || "凡购买本站任何商品必须遵守各个国家法律法规及各大平台规则，非法用途一切后果自负，本站不承担任何法律及连带责任！" }}</p>
         <p class="mt-1.5 text-sm leading-6 text-muted-foreground">数字商品发货后即完成交付，请在收到后第一时间改绑邮箱、手机号并开启二次验证；后续因买家违规使用导致的问题，请联系客服按实际情况处理。</p>
+      </div>
+    </section>
+
+    <!-- 付款方式：放在售后说明和页脚之间，Logo 一排居中 -->
+    <section class="mx-auto w-full max-w-6xl px-5 pt-8">
+      <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 py-2">
+        <span class="flex items-center gap-2 text-[15px] font-bold"><span class="grid size-6 place-items-center rounded bg-[#1677ff] text-[13px] font-black text-white">支</span>Alipay</span>
+        <span class="flex items-center gap-2 text-[15px] font-bold"><span class="grid size-6 place-items-center rounded-full bg-[#07c160] text-[13px] font-black text-white">微</span>WeChat Pay</span>
+        <span class="flex items-center gap-2 text-[15px] font-bold"><span class="grid size-6 place-items-center rounded-full bg-[#26a17b] text-[13px] font-black text-white">₮</span>USDT</span>
       </div>
     </section>
 
