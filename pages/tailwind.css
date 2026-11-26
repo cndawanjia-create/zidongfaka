@@ -125,6 +125,37 @@
 .product-rich-content {
   overflow-wrap: anywhere;
 }
+
+/* ---------- 银宇宙星球模板视觉（仅前台使用，.yy-page 作用域内） ---------- */
+.yy-page {
+  background:
+    radial-gradient(1000px 520px at 88% -80px, rgba(59, 130, 246, 0.38), transparent 62%),
+    radial-gradient(900px 520px at -12% 240px, rgba(219, 39, 119, 0.2), transparent 60%),
+    radial-gradient(700px 420px at 55% 110%, rgba(124, 58, 237, 0.16), transparent 60%),
+    linear-gradient(180deg, #a9b1f6 0, #c0c4f8 240px, #d5d2fb 560px, #ccd6fa 100%);
+  background-attachment: fixed;
+}
+.dark .yy-page {
+  background:
+    radial-gradient(1000px 520px at 88% -80px, rgba(59, 130, 246, 0.25), transparent 62%),
+    radial-gradient(900px 520px at -12% 240px, rgba(219, 39, 119, 0.14), transparent 60%),
+    linear-gradient(180deg, #1b1738 0, #12161d 560px, #12161d 100%);
+  background-attachment: fixed;
+}
+.yy-accent-btn {
+  background: #0e9f6e;
+  color: #fff;
+}
+.yy-accent-btn:hover {
+  background: #0b8a5f;
+}
+.dark .yy-accent-btn {
+  background: #17b978;
+}
+.yy-notice-bar {
+  background: #14181f;
+  color: #fff;
+}
 .product-rich-content h2 { margin: 1.5rem 0 0.75rem; font-size: 1.5rem; font-weight: 700; }
 .product-rich-content h3 { margin: 1.25rem 0 0.5rem; font-size: 1.25rem; font-weight: 600; }
 .product-rich-content p { margin: 0.75rem 0; }
